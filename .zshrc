@@ -4,8 +4,7 @@ export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:/usr/local/go/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# Change LS_COLORS https://geoff.greer.fm/lscolors/
-export LSCOLORS=ExFxBxDxCxegedabagacad
+export TERM="xterm-256color"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -75,14 +74,13 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git golang z)
 
-source $ZSH/oh-my-zsh.sh
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -102,8 +100,18 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-aliasvim=/opt/homebrew/bin/vim
+alias vim=/opt/homebrew/bin/vim
 
 # Created by `pipx` on 2023-08-04 21:48:12
 export PATH="$PATH:/Users/katrinamehring/.local/bin"
-alias config='/usr/bin/git --git-dir=/Users/katrinamehring/.cfg/ --work-tree=/Users/katrinamehring'
+alias gitc='/usr/bin/git --git-dir=/Users/katrinamehring/.cfg/ --work-tree=/Users/katrinamehring'
+
+# Change LS_COLORS https://geoff.greer.fm/lscolors/
+export LSCOLORS="ExFxBxDxCxegedabagacad"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+source $ZSH/oh-my-zsh.sh
+
