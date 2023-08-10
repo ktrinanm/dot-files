@@ -104,7 +104,11 @@ alias vim=/opt/homebrew/bin/vim
 
 # Created by `pipx` on 2023-08-04 21:48:12
 export PATH="$PATH:/Users/katrinamehring/.local/bin"
+
+# custom commands
 alias gitc='/usr/bin/git --git-dir=/Users/katrinamehring/.cfg/ --work-tree=/Users/katrinamehring'
+alias igrep='grep -Hrni'
+alias sgrep='grep -Hrn'
 
 # Change LS_COLORS https://geoff.greer.fm/lscolors/
 export LSCOLORS="ExFxBxDxCxegedabagacad"
